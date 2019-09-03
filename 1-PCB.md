@@ -34,15 +34,16 @@ Les composants
 * TTGO-T5 V1.6 ou v2.4 avec écran 1.54'' ( ae, ttgo-t5 v2.4 1.54 ) 
 ![TTGO-T5]({{ '/assets/componants/TTGO-T5-v1-2.jpg' | relative_url }})
 * Ms5611 mpu9250 ( eb/ae, CJMCU-117 )
-![Slide switch]({{ '/assets/componants/mpu2.jpg' | relative_url }})
+![MS5611-MPU9250]({{ '/assets/componants/mpu2.jpg' | relative_url }})
 * GPS ATGM336H  ( ae, ATGM336H avec antenne externe )
-![Slide switch]({{ '/assets/componants/ATGM336H.JPG' | relative_url }})
-* Resistance 270k (R1) ( ae/eb ) (pour TTGO v1.6)
-* Resistance 1M (R2) ( ae/eb ) (pour TTGO v1.6)
-* 3 x Resistance 1k (R3,R4,R5) ( ae/eb )
+![GPS]({{ '/assets/componants/ATGM336H.JPG' | relative_url }})
+* 2 x Resistance 1k (R3,R4) ( ae/eb )
+* 1 x Resistance 1k (R5) ( ae/eb ) (option)
 * Transistor S8050 ou equivalent (2N2222) en boitier T092 ( ae/eb ) (option)
+* Switch à glissière [slide switch] (ae ) (option)
+![Slide switch]({{ '/assets/componants/slide_switch.jpg' | relative_url }})
 * Batterie 403070 (ae)
-![Slide switch]({{ '/assets/componants/battery.jpg' | relative_url }})
+![Batterie]({{ '/assets/componants/battery.jpg' | relative_url }})
 * 4 x Vis à bois 3x20
 * Velcro 20mm
 
