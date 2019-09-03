@@ -2,7 +2,7 @@
 layout: page
 title: Description
 linkdesc: Voir le projet
-linkmsg: LE PROJET !
+linkmsg: GO !
 linktarget: "https://github.com/prunkdump/GNUVario-TTGO-T5"
 ---
 Le projet GNUVario-E est un effort collaboratif visant à créer un variomètre utilisant du matériel et un logiciel libres et ouverts.

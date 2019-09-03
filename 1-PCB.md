@@ -6,10 +6,18 @@ linkmsg: Trouver !
 linktarget: "/assets/pcb/gnuvario_pcb_layout.zip"
 ---
 
+Le SCHEMA
+-----------------------------------------
+
+![Le Schema du GNUVario]({{ '/assets/schematic.jpg' | relative_url }})
+
+Il peut être téléchargés [ici]({{ '/assets/schematic.pdf' | relative_url }}).
+
 Le PCB
 -----------------------------------------
 
-Le projet GNUVario fourni les fichiers du circuit imprimé pour vous aider à construire le variomètre.![Le PCB du GNUVario]({{ '/assets/pcb.jpg' | relative_url }})
+Le projet GNUVario fourni les fichiers du circuit imprimé pour vous aider à construire le variomètre.![Le PCB Back du GNUVario]({{ '/assets/PCB V2 back.jpg' | relative_url }})
+![Le PCB Front du GNUVario]({{ '/assets/PCB_V2_front.jpg' | relative_url }})
 
 Ils peuvent être téléchargés [ici]({{ '/assets/pcb/gnuvario_pcb_layout.zip' | relative_url }}).
 
