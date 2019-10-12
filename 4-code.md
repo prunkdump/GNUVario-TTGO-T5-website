@@ -21,15 +21,15 @@ Maintenant que l'IDE est configuré, vous pouvez récupérer le code source du G
 La méthode simple : télécharger le fichier zip
 ----------------------------------
 
-Le code source peut être téléchargé directement sous forme de fichier zip sur [GitHub](https://github.com/jpg63/Gnuvario_for_TTGO-T5). Il suffit de cliquer sur **Clone or download** and **Download zip**.
+Le code source peut être téléchargé directement sous forme de fichier zip sur [GitHub](https://github.com/prunkdump/GNUVario-TTGO-T5). Il suffit de cliquer sur **Clone or download** and **Download zip**.
 
 ![GitHub download zip]({{ "/assets/code/code1.jpg" | absolute_url }})
 
-Extrayez le zip à l'emplacement de votre choix. Cela va créer un repertoire **Gnuvario_for_TTGO-T5-master**.
+Extrayez le zip à l'emplacement de votre choix. Cela va créer un repertoire **Gnuvario-TTGO-T5-master**.
 
 ![GitHub téléchargement zip]({{ "/assets/code/code2.jpg" | absolute_url }})
 
-L’installation de l’IDE Arduino a normalement créé un répertoire **Arduino** dans votre dossier personnel. Assurez-vous que ce dossier est vide et copiez le **contenu** du dossier **Gnuvario_for_TTGO-T5-master** dans le dossier **Arduino**.
+L’installation de l’IDE Arduino a normalement créé un répertoire **Arduino** dans votre dossier personnel. Assurez-vous que ce dossier est vide et copiez le **contenu** du dossier **Gnuvario-TTGO-T5-master** dans le dossier **Arduino**.
 
 ![GitHub téléchargement zip]({{ "/assets/code/code3.jpg" | absolute_url }})
 ![GitHub téléchargement zip]({{ "/assets/code/code4.jpg" | absolute_url }})
@@ -43,7 +43,7 @@ Installez donc Git et assurez-vous que le dossier **Arduino** de votre répertoi
 
 {% highlight shell_session %}
 ~$ cd Arduino
-~/Arduino$ git clone https://github.com/jpg63/Gnuvario_for_TTGO-T5.git .
+~/Arduino$ git clone https://github.com/prunkdump/GNUVario-TTGO-T5.git .
 ~/Arduino$ git checkout -b myversion 
 {% endhighlight %}
 
@@ -67,7 +67,10 @@ Lancez maintenant l'IDE Arduino et ouvrez l'esquisse que vous souhaitez compiler
 
 Dans le menu **Outils**, **assurez-vous de choisir la bonne carte**. La plus classique de ce projet est l'**ESP32 Dev Module**.
 
-![GitHub download zip]({{ "/assets/code/code6.jpg" | absolute_url }})
+et selectionner partition scheme : **Minimal SPIFFS (1,9 MB APP with OTA / 180 KB SPIFFS)**
+ 
+
+![GitHub download zip]({{ "/assets/code/ide1.jpg" | absolute_url }})
 
 Il vous suffit de cliquer sur le bouton **téléverser**.
 

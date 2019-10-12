@@ -16,8 +16,8 @@ Il peut être téléchargés [ici]({{ '/assets/schematic.pdf' | relative_url }})
 Le PCB
 -----------------------------------------
 
-Le projet GNUVario fourni les fichiers du circuit imprimé pour vous aider à construire le variomètre.![Le PCB Back du GNUVario]({{ '/assets/PCB_V2_back.jpg' | relative_url }})
-![Le PCB Front du GNUVario]({{ '/assets/PCB_V2_front.jpg' | relative_url }})
+Le projet GNUVario fourni les fichiers du circuit imprimé pour vous aider à construire le variomètre.![Le PCB Back du GNUVario]({{ '/assets/PCB_V2_1_back.jpg' | relative_url }})
+![Le PCB Front du GNUVario]({{ '/assets/PCB_V2_1_front.jpg' | relative_url }})
 
 Ils peuvent être téléchargés [ici]({{ '/assets/pcb/gnuvario_pcb_layout.zip' | relative_url }}).
 
@@ -37,11 +37,6 @@ Les composants
 ![MS5611-MPU9250]({{ '/assets/componants/mpu2.jpg' | relative_url }})
 * GPS ATGM336H  ( ae, ATGM336H avec antenne externe )
 ![GPS]({{ '/assets/componants/ATGM336H.JPG' | relative_url }})
-* 2 x Resistance 1k (R3,R4) ( ae/eb )
-* 1 x Resistance 1k (R5) ( ae/eb ) (option)
-* Transistor S8050 ou equivalent (2N2222) en boitier T092 ( ae/eb ) (option)
-* Switch à glissière [slide switch] (ae ) (option)
-![Slide switch]({{ '/assets/componants/slide_switch.jpg' | relative_url }})
 * Batterie 403070 (ae)
 ![Batterie]({{ '/assets/componants/battery.jpg' | relative_url }})
 * 4 x Vis à bois 3x20

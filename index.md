@@ -11,16 +11,19 @@ Caractéristiques :
 ---------
 * Altitude haute précision avec code ms5611 amélioré
 * Vitesse verticale haute précision avec accéléromètre InvenSense
-* Affichage sur un écran E-paper Waveshare de 1,54” : altitude, vitesse verticale, vitesse au sol, ...
+* Affichage sur un écran E-paper Waveshare de 1,54” ou 2,9": altitude, vitesse verticale, vitesse au sol, ...
 * Vitesse au sol et finesse avec GPS 
 * Suivi de vol avec lecteur de carte SD et GPS 
 * Communication Bluetooth avec appareil externe
 * Niveau de batterie 
-* Récupération des vols via USB (à venir)
-* Paramètrage et récupération des vols via Wifi 
+* Mise à jour du vario en Wifi
+* Paramètrage du vario en wifi
+* Récupération des vols en Wifi 
 * Multi écran
 * Parametrage du son par courbe (à venir)
 * Parametrage des ecrans (à venir)
+* Mise en veille prolongé
+* 3 boutons 
 
 Liens :
 ---------
