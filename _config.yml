@@ -20,11 +20,15 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/GNUVario-TTGO-T5-website" # the subpath of your site, e.g. /blog
 url: "https://prunkdump.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: 
-github_username:  jpg63
+github_username:  prunkdump
+#github_username:  jpg63
 collections:
   - tutorials
+  - manuel
 collections:
   tutorials:
+    output: true
+  manuel:
     output: true
 defaults:
   - scope:
@@ -33,6 +37,12 @@ defaults:
     values:
       layout: tutorial
       title: Matériel
+  - scope:
+      path: ""
+      type: "manuel"
+    values:
+      layout: manuel
+      title: Manuel Utilisateur
 
 # Build settings
 markdown: kramdown

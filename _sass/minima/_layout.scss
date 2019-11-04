@@ -186,7 +186,46 @@
     float: right;
 }
 
-  
+.manuel_nav {
+
+    a {
+	display: inline-block;
+	//display: flex;
+	//display: flex;                   /* 1 */
+	//align-items: flex-start;         /* 2 */
+	//justify-content: space-between;  /* 3 */
+	//flex-direction: row;
+	
+	border-radius: 5px;
+	padding: 8px 16px;
+	margin: 1px;
+	color: #ffffff;
+    }
+}
+
+.manuel {
+    img {
+	border-radius: 2%;
+    }
+}
+
+.manuel_previous {
+
+    float: left;
+    background-color:  $green-color;
+    //justify-content: flex-start;
+}
+
+.manuel_home {
+    background-color: $grey-color-dark;
+}
+
+.manuel_next {
+
+    //justify-content: flex-end;
+    background-color:  $green-color;
+    float: right;
+}
 
 
 /**
