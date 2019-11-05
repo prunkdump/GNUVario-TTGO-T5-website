@@ -45,8 +45,8 @@ description: Les boutons
 
 **Page Mise en veille (Sleep) :**
 
-{% include manuelimg.md name="page_vario.jpg" %}
+{% include manuelimg.md name="page_sleep.jpg" %}
 
 **Page Calibration  :**
 
-{% include manuelimg.md name="page_vario.jpg" %}
+{% include manuelimg.md name="calibration.jpg" %}
