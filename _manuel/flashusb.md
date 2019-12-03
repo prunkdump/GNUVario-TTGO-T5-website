@@ -7,7 +7,7 @@ Avant de pouvoir utiliser le Gnuvario-E vous devez installer le logiciel et pré
 
 **Préparation de la carte SD**   
 Sur une carte MicroSD vierge formatée en Fat16 ou 32,      
-- copier le dossier RootSD à la racine de la carte SD avec vos informations personnelles à la racine de la carte SD    
+- copier le contenu du dossier RootSD à la racine de la carte SD avec vos informations personnelles à la racine de la carte SD    
 
 **Mise à jour du Gnuvario-E**   
 Avant de mettre à jour le vario vous devez télécharger et installer l'outil flash download tools d'espressif
