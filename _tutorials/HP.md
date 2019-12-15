@@ -1,8 +1,12 @@
 ---
 step: 4
-description: Soudure du HP (option)
+description: Soudure du HP 
 ---
 
-Il est possible de déplacer le Haut Parleur sur le PCB.
-Cette étape n'est pas forcement utile si votre HP est solidement soudé sur la carte TTGO
-{% include tutoimg.md name="20191011_130216_resizeda.jpg" %}
+Placez de la soudure sur les deux plots du haut parleur
+{% include tutoimg.md name="IMG_8802.JPG" %}
+{% include tutoimg.md name="IMG_8803.JPG" %}
+
+Soudez les fils du HP en **faisant très attention aux polarités**.
+{% include tutoimg.md name="IMG_8804.JPG" %}
+{% include tutoimg.md name="IMG_8805.JPG" %}

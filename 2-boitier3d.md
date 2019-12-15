@@ -16,7 +16,7 @@ Le GNUVario-E utilise un boitier 3D que vous allez pouvoir imprimer ou faire imp
 
 ![TTGO-T5]({{ '/assets/boitier_assemblage.jpg' | relative_url }})
 
-[le boitier pour écran 2,9'' V0.0]({{ '/assets/3D_case29.zip' | relative_url }})
+[le boitier pour écran 2,9'' V2.01]({{ '/assets/3D_case29.zip' | relative_url }})
 
 ![TTGO-T5]({{ '/assets/boitier_3d_2.jpg' | relative_url }})
 

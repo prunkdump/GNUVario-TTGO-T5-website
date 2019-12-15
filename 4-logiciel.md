@@ -6,58 +6,84 @@ linkmsg: Trouver !
 linktarget: "/assets/fichiers/Gnuvario-E.zip"
 ---
 
-Il existe deux versions du logiciel du GNUVARIO-E :
+**Firmware**      
+      
+Il existe plusieurs versions du firmware du GNUVARIO-E :   
 
-la version Stable : [0.5]({{ '/assets/fichiers/Gnuvario-E.zip' | relative_url }})    
-la version de Développement : [0.6 beta 4]({{ '/assets/fichiers/Gnuvario-E_Beta.zip' | relative_url }})    
+Version pour écran 1,54''     
+
+la version Stable : [0.5]({{ 'assets/fichiers/firmware154/Beta/Gnuvario-E.ino.esp32.bin' | relative_url }})    
+la version de Développement : [0.6 beta 7]({{ 'assets/fichiers/firmware154/Stable/Gnuvario-E.ino.esp32.bin' | relative_url }})  
+
+Version pour écran 2.90''    
+
+la version Stable : [0.5]({{ 'assets/fichiers/firmware290/Beta/Gnuvario-E.ino.esp32.bin' | relative_url }})    
+la version de Développement : [0.6 beta 4]({{ 'assets/fichiers/firmware290/Stable/Gnuvario-E.ino.esp32.bin' | relative_url }})  
+
+**Site Web Embarqué**     
+
+RootSD pour la version [Stable 0.5 du Firmware]({{ 'assets/fichiers/RootSD/Stable/RootSD.zip' | relative_url }})    
+RootSD pour la version [Beta 0.6b7 du Firmware]({{  'assets/fichiers/RootSD/Beta/RootSD.zip' | relative_url }})     
 
 **Les Fonctionnalités**    
 		
-Version 0  		
+Version 0.6  		
 - Vario précis avec capteur de pression et accéleromètres   
 - GPS   
 - Enregistrement des vols sur carte SD   
 - Affichage sur écran E-Ink   
 - Affichage du vario, de l'altitude, de la vitesse sol, de l'heure, du temps de vol, ...
-                                                                       
-Version 0.3                                                                                                                                   
-- Paramètre utilisateur dans fichier SETTINGS.TXT                        
+- Paramètre utilisateur dans plusieurs fichiers au format texte et json                       
 - Coupure du son via le bouton central (en vol)                          
-                                                                       
-Version 0.4                                                             
 - Statistiques de Vol                                                   
 - taux de chute et finesse                                              
 - indicateur de montée/descente   
 - Désactiver l'enregistrement des vols   		
-                                                                       
-Version 0.5                                                               
 - Mise à jour via la carte SD (update.bin)                             
 - Récupération des vol via Wifi                                         
 - Mise à jour via Wifi                                                  
-- Upload des fichiers de configuration via Wifi                         
-- Ajout Bluetooth                                                       
-- Multi-écran (ajout 2ème page / gestion des boutons droit et gauche)    
+- Upload / download de fichiers via Wifi                         
+- Multi-écran (navigation avec les boutons droit et gauche)    
 - Affichage de la température          
 - Page de configuration du volume sonore    
 - Page de statistique accessible via les boutons    	
-- Mise en veille automatique en cas de batterie trop faible            
-                                                                      
-Version 0.6                                                             
+- Mise en veille automatique en cas de batterie trop faible  
+- Mise en veille automatique en cas d'inactivité          
+- Mise en veille prolongée par bouton                                             
 - Page de calibration                                                   
-- Mise en veille prolongée                                               
 - Ajout gestion de l'écran 2.9''                               
 - Ajout du serveur Web sur SDCARD                                       
-- Activation du Bluetooth en paramètre dans le fichier SETTINGS.TXT     
 - Ajout de titre au dessus des champs de données                        
 - Ajout de nouveau objects screen - ligne - rose des vents               
-- Modification de l'organisation des fichiers sur la carte SD           
-- Ajout compensation de température dans fichier SETTINGS.TXT           
-- Ajout correction d'altitude GPS dans SETTINGS.TXT                      		
+- Ajout compensation de température
+- Ajout correction d'altitude GPS 
+- Paramètres utilisateur modifiable via une pas web en wifi
 		
 **L'historique du logiciel**
 
 | version | beta    | date     | Description                                              |
 |---------|---------|:---------:|---------------------------------------------------------|
+| v0.6    | 7       | 17/11/19 | Mise à jour ecran 2.9''                                  |
+|         |         |          | Mise à jour fichier params.jso                           |
+|         |         |          | Mise à jour page web                                     |
+|         |         |          | Correction Bug serveurWeb                                |
+|         |         |          | Correction Bug deep sleep                                |
+|         |         |          | Ajout TRACE (Debbuger)                                   |
+|         |         |          | Ajout Mode veille paramètrable                           |
+|         |         |          | Ajout Passage en veille en cas d'inactivité              |
+| v 0.6   | 6       | 11/11/19 | plusieurs fichiers de configurations / params.jso        |
+|         |         |          | variocal.cfg, wifi.cfg                                   |
+|         |         |          | Ajout gestion des versions params.jso automatique /      |
+|         |         |          | création automatique des champs avec recup des données   |
+|         |         |          | Correction bug volume                                    |
+|         |         |          | AJOUT - dans params.jso - MULTIDISPLAY_DURATION et       |
+|         |         |          | plusieurs voiles                                         |
+| v 0.6   | 5       | 03/11/19 | Déplacement validation deep-sleep sur bouton gauche      |
+|         |         |          | Corrections mineures sur varioscreen 2.9''               |
+|         |         |          | Corrections mineures sur varioscreen 1.54''              |  
+|         |         |          | Amélioration de la gestion de la première mesure d'altit.|
+|         |         |          | Correction du bug de l'écran qui fige                    |
+|         |         |          | Moyenne alti Gps sur 15 mesures avant calibration baro   |
 |v 0.6    |  4      | 27/10/19 | Correction gestion zone horaire                          |
 |         |         |          | Changement de librairie MS5611 et MPU                    |
 |         |         |          | Ajout compensation alti gps                              |
@@ -116,7 +142,6 @@ Version 0.6
 |         |         |          | Modification de la séquence de démarrage de l'enregistrement |
 |         |         |          |                                                          |
 
-
 **Les futurs développements**
 
  V0.4                                                                                                                                                 																												
@@ -128,12 +153,21 @@ Version 0.6
                                                                                                      
  v0.6                                                                                                      
  AJOUT - Calibration MPU                                                                                                                 
- AJOUT - page web de configuration du vario / Page Web SDCARD                                           
  MODIF - Refaire gestion Eeprom avec préférence                                                         
- AJOUT - gestion du MPU par Interruption                                                                
  BUG   - affichage figé / problème d'init du MPU et d'attente de la première lecture                    
- BUG   - reboot à l'init du MPU                                                                      
-                                                                                                                                                           
+ BUG   - reboot à l'init du MPU    
+ BUG   - blocage MPU - plus de valeur valide ou décalage des mesures dans le temps      
+ BUG   - temperature     
+ BUG   - DISPLAY_OBJECT_LINE object ligne ne fonctionne pas        
+ BUG   - Alti erreur - si on ne valide pas le deep sleep                
+ BUG   - Norcissement de l'écran       
+
+ v0.7        
+ BUG   - UpdateSD ne marche plus - passage à sdfat     
+ BUG   - upload et update via wifi ne marche plus
+ AJOUT - Maj via Internet         
+ AJOUT - Créer une bibliothèque de log (debug)  avec fichier de log              
+	
  VX.X                                                                                                
  AJOUT - Paramètrage des écrans                                                                                 
  MODIF - Gérer le son via le DAC                                                                                

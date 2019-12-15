@@ -6,26 +6,67 @@ description: Soudure des plaquettes
 Prenez maintenant le MPU et le GPS:
 {% include tutoimg.md name="20191011_122119_resizeda.jpg" %}
 
-Placez les connecteurs du coté des résistances (la partie longue vers le bas).
-{% include tutoimg.md name="20191011_124127_resizeda.jpg" %}
+Protégez les contacts du PCB (face en contact avec les cartes) avec du Ruban adhésif Kapton
+{% include tutoimg.md name="IMG_8734.JPG" %}
+{% include tutoimg.md name="IMG_8737.JPG" %}
 
-Ensuite, placez le MPU et le GPS contre le PCB comme ceci:
+Placez les connecteurs sur le dessus du PCB (la partie longue vers le haut).
+{% include tutoimg.md name="IMG_8742.JPG" %}
+
+En vous appuyant sur une surface dure, enfoncez les pins
+{% include tutoimg.md name="IMG_8743.JPG" %}
+{% include tutoimg.md name="IMG_8744.JPG" %}
+{% include tutoimg.md name="IMG_8745.JPG" %}
+
+Répétez l'opération pour le deuxième connecteur 
+{% include tutoimg.md name="IMG_8753.JPG" %}
+
+Callez le PCB avec la batterie
+{% include tutoimg.md name="IMG_8754.JPG" %}
+
+Commencez par souder **une** broche, vérifiez son emplacement. 
+{% include tutoimg.md name="IMG_8755.JPG" %}
+{% include tutoimg.md name="IMG_8756.JPG" %}
+{% include tutoimg.md name="IMG_8757.JPG" %}
+{% include tutoimg.md name="IMG_8758.JPG" %}
+{% include tutoimg.md name="IMG_8759.JPG" %}
+
+Souder les autres broches. **Soyez très prudent ! N'oubliez pas certaines d'entre elles**.
+{% include tutoimg.md name="IMG_8760.JPG" %}
+
+Coupez les pins au plus pret des soudures.
+{% include tutoimg.md name="IMG_8761.JPG" %}
+{% include tutoimg.md name="IMG_8762.JPG" %}
+
+Enlevez l'isolant en utilisant un tournevis fin
+{% include tutoimg.md name="IMG_8763.JPG" %}
+{% include tutoimg.md name="IMG_8764.JPG" %}
+{% include tutoimg.md name="IMG_8765.JPG" %}
+
+Ensuite, placez le MPU contre le PCB comme ceci:
+{% include tutoimg.md name="IMG_8767.JPG" %}
+{% include tutoimg.md name="IMG_8768.JPG" %}
 {% include tutoimg.md name="20190818_091338a.jpg" %}
 {% include tutoimg.md name="20190818_091555a.jpg" %}
 
 Assurez-vous que toutes les cartes sont à plat sur le circuit imprimé.
-Ne soudez qu'**une** broche de la carte, vérifiez son emplacement et soudez la broche opposée. 
+Ne soudez qu'**une** broche de la carte, vérifiez son emplacement. 
+{% include tutoimg.md name="IMG_8769.JPG" %}
+{% include tutoimg.md name="IMG_8770.JPG" %}
+{% include tutoimg.md name="IMG_8771.JPG" %}
 
 Souder les autres broches. **Soyez très prudent ! N'oubliez pas certaines d'entre elles**.
+{% include tutoimg.md name="IMG_8772.JPG" %}
 {% include tutoimg.md name="20190818_091800a.jpg" %}
+
+Répétez l'opération avec le GPS 
+{% include tutoimg.md name="IMG_8773.JPG" %}
+{% include tutoimg.md name="IMG_8774.JPG" %}
+{% include tutoimg.md name="IMG_8775.JPG" %}
+{% include tutoimg.md name="IMG_8776.JPG" %}
+{% include tutoimg.md name="IMG_8777.JPG" %}
+{% include tutoimg.md name="IMG_8778.JPG" %}
+{% include tutoimg.md name="IMG_8779.JPG" %}
 {% include tutoimg.md name="20191011_123725_resizeda.jpg" %}
 
-Vous devez maintenant retirer tous les isolants en plastique des têtes de broche. **Restez calme et patient pendant cette étape!** Il est très facile de plier les broches lors de cette opération, ce qui compliquera grandement la prochaine étape. **N'appliquez pas trop de force sur les broches** et essayez de retirer l'isolation verticalement. Si vous trouvez trop difficile de les retirer, essayez de réchauffer le circuit imprimé avec un sèche-cheveux.
-{% include tutoimg.md name="20191011_124159_resizeda.jpg" %}
-
-Soudez **une** broche de la carte, vérifiez son emplacement et soudez la broche opposée. 
-
-Terminant en Soudant les autres broches. **Soyez très prudent ! N'oubliez pas certaines d'entre elles**.
-{% include tutoimg.md name="20191011_124554_resizeda.jpg" %}
-{% include tutoimg.md name="20191011_125004_resizeda.jpg" %}
 
