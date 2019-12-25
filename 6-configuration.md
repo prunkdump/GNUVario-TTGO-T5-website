@@ -18,6 +18,8 @@ Commencez par vérifier les fichiers. Il y a un fichier commun à tous les micro
 
 Pour "commenter" une ligne ajouter "//" au début. Cela désactive l'option.
 
+Normalement, vous ne devriez avoir à adapter que le type d'écran, si vous utiliser un écran de taille différente de 1.54" : c'est la directive **VARIOSCREEN_SIZE** dans le fichier HardwareConfig.h.
+
 
 2) La configuration logiciel
 --------------------------------------
@@ -26,15 +28,17 @@ Il existe 3 méthodes pour configurer votre variomètre avec vos paramètres per
 
 a) La page Web
 
-Le plus simple pour configurer votre GnuVario-E est d'utiliser la page web embarquée et le mode Wifi
-Cette fonctionnalitée est décrite dans le manuel d'utilisation
+Le plus simple pour configurer votre GnuVario-E est d'utiliser la page web embarquée et le mode Wifi.  
+Ceci va mettre à jour automatiquement les fichiers de configuration sur la sdcard.
+Cette fonctionnalitée est décrite dans le [manuel d'utilisation]({{ site.baseurl }}{% link 7-manuel.md %}).
 
-b) Le fichier SETTINGS.TXT sur la carte SD
+b) Les fichiers de configuration sur la carte SD.
 
-Le fichier SETTINGS.TXT doit être placé à la racine de la carte SD. Ce fichier contient l'ensemble des paramètres utilisateurs permettant de personnaliser le fonctionnement du GnuVario-ESP32
-Chaque paramètre est encadré de crochets et la valeur se trouve après le signe =. Il est impératif de conserver la syntaxe de ce fichier. Ce fichier peut être modifié sans recompilation du code.
-
-[SETTINGS.TXT](https://github.com/jpg63/Gnuvario_for_TTGO-T5/blob/master/Sources/Stable%20Code/Gnuvario-E/SETTINGS.TXT)
+Ces fichiers se trouvent à la racine de la carte SD ; ils sont décrits plus en détail en bas de cette page.  
+Ils permettent de configurer le GNUVario sans avoir à recompiler le code.
+- params.jso : contient les paramètres généraux du GNUVario.
+- wifi.cfg : contient les informations de connexion au réseau wifi ; on peut déclarer jusqu'à 4 réseaux wifi différents.
+- variocal.cfg : contient les informations de calibration du GNUVario. Voir le [manuel d'utilisation]({{ site.baseurl }}{% link 7-manuel.md %}) pour l'opération de calibration.
 
 c) Le fichier VarioSettings.h
 
@@ -46,41 +50,37 @@ Si vous ne souhaitez pas utiliser de carte SD, vous pouvez modifier le fichier l
 
 3) Liste des paramètres personnalisables
 -----------------------------
+### params.jso #
 
-Disponible dans le fichier *SETTINGS.TXT*, il est possible de personnaliser le fonctionnement du GnuVario.
+C'est un fichier au format json, qui permet de personnaliser le fonctionnement du GnuVario.
 
-Voici les paramètres modifiables les plus importants et leurs descriptions
+Les principaux paramètres de ce fichier sont les suivants :
 
-**VARIOMETER_PILOT_NAME**   
+**systeme - MULTIDISPLAY_DURATION**    
+défaut : 2000 millisecondes    
+Temps d'affichage des différentes pages (en millisecondes)
+
+**general - TIME_ZONE**    
+Definit la zone horaire UTC : (+2) en été (+1) en hiver 
+
+**general - PILOT_NAME**   
 Nom du pilote 
 
-**VARIOMETER_GLIDER_NAME**    
-Nom de la voile
+**general - GLIDER_NAMEx**  
+x de 1 à 4 : Permet de saisir 4 noms de voiles
 
-**VARIOMETER_TIME_ZONE**    
-Definit la zone horaire UTC (+2) en été (+1) en hiver 
+**general - GLIDER_SELECT**  
+Permet de choisir 1 voile, parmi les 4 possibles
 
-**VARIOMETER_BEEP_VOLUME**   
-Défaut : 8   
-Volume des Bips par défaut, valeur entre 0 et 10, 10 étant le volume maximum
-
-**VARIOMETER_BASE_PAGE_DURATION**    
-défaut : 3000 millisecondes    
-Temps d'affichage de la page principale (en millisecondes)
-
-**VARIOMETER_ALTERNATE_PAGE_DURATION**    
-défaut : 3000   
-Temps d'affichage de la page secondaire (en millisecondes)
-
-**VARIOMETER_SINKING_THRESHOLD**    
+**vario - SINKING_THRESHOLD**    
 défaut : -2.0   
 Seuil de déclenchement des dégueulantes 
 
-**VARIOMETER_CLIMBING_THRESHOLD**         
+**vario - CLIMBING_THRESHOLD**         
 défaut : 0.2        
 Seuil de déclenchement du zérotage    
 
-**VARIOMETER_NEAR_CLIMBING_SENSITIVITY**  
+**vario - NEAR_CLIMBING_SENSITIVITY**  
 défaut : 0.5   
 Zone de zérotage    
 
@@ -89,88 +89,124 @@ de -2.0 à 0.2 pas de son
 de 0.2 à 0.5 bip de zérotage    
 de 0.5 à 10 bip de montée      
 
-**VARIOMETER_ENABLE_NEAR_CLIMBING_ALARM**
+**vario - ENABLE_NEAR_CLIMBING_ALARM**
 défaut : 0       
 1 = Alarme de montée proche: signale que vous entrez ou sortez de la zone de montée proche
 
-**VARIOMETER_ENABLE_NEAR_CLIMBING_BEEP**    
+**vario - ENABLE_NEAR_CLIMBING_BEEP**    
 défaut : 0         
 1 = Bip de zérotage: bip lorsque vous êtes dans une zone comprise entre VARIOMETER_CLIMBING_THRESHOLD et VARIOMETER_NEAR_CLIMBING_SENSITIVITY
 
-**FLIGHT_START_MIN_TIMESTAMP**    
-défaut : 15000 millisecondes            
-Temps minimum entre le début du vol et le démarrage en millisecondes
-
-**FLIGHT_START_VARIO_LOW_THRESHOLD**  
-défaut : 0.5         
-**FLIGHT_START_VARIO_HIGH_THRESHOLD** 
-défaut : 0.5       
-Vitesse verticale minimale en m / s (seuil bas / haut) permettant le déclenchement de l'enregistrement
-
-**FLIGHT_START_MIN_SPEED**   
-défaut : 8 km/h       
-Vitesse au sol minimale en km/h déclenchant l'enregistrement du vol
-
-**VARIOMETER_RECORD_WHEN_FLIGHT_START**     
-défaut : 1      
-0 = desactivée, l'enregistrement débute des que le GPS est opérationel    
-1 = Activée, l'enregistrement débutera à la détection du début de vol (vitesse horizontale supérieure à FLIGHT_START_MIN_SPEED et vitesse horizontale inférieure à FLIGHT_START_VARIO_LOW_THRESHOLD ou supérieure à FLIGHT_START_VARIO_HIGH_THRESHOLD  
-
-**VARIOMETER_DISPLAY_INTEGRATED_CLIMB_RATE**     
+**vario - DISPLAY_INTEGRATED_CLIMB_RATE**     
 défaut : 0     
 1 = Affichage du taux de chute moyen sur une période     
 0 = Affichage du taux de chute instantané 
 
-**VARIOMETER_INTEGRATION_TIME**     
+**vario - CLIMB_PERIOD_COUNT**     
 défaut : 10     
 durée de l'intégration pour le calcul du taux de chute
 
-**VARIOMETER_INTEGRATION_DISPLAY_FREQ**     
+**vario - SETTINGS_GLIDE_RATIO_PERIOD_COUNT**     
 défaut : 20    
 fréquence d'affichage du taux de chute
 
-**RATIO_CLIMB_RATE**    
+**vario - RATIO_CLIMB_RATE**    
 défaut : 2     
 1 = Affichage de la finesse     
 2 = Affichage du taux de chute moyen     
 3 = Affichage des 2 informations en alternance dans la zone à droite de l'affiche du vario
 
-**RATIO_MAX_VALUE**     
+**vario - RATIO_MAX_VALUE**     
 défaut : 30.0    
 valeur max utilisée dans le calcul du taux de chute
 
-**RATIO_MIN_SPEED**    
+**vario - RATIO_MIN_SPEED**    
 défaut : 10.0    
 valeur minimum de vitesse utilisée dans le calcul du taux de chute
 
-**VARIOMETER_SENT_LXNAV_SENTENCE**     
+**vario - SENT_LXNAV_SENTENCE**     
 défaut : 1  
 Format de la transmition BT      
 1 = LXNAV     
 0 = LK8000
 
-**SLEEP_TIMEOUT_SECONDS**   
-défaut : 1200 sec soit  20 minutes     
-mise en veille après X sec d'inactivité
+**flightstart - FLIGHT_START_MIN_TIMESTAMP**    
+défaut : 15000 millisecondes            
+Temps minimum entre le début du vol et le démarrage en millisecondes
 
-**SLEEP_THRESHOLD_CPS**    
-défaut : 50 cms       
-seuil de déclenchement d'activité
+**flightstart - FLIGHT_START_VARIO_LOW_THRESHOLD**  
+défaut : 0.5         
+**flightstart - FLIGHT_START_VARIO_HIGH_THRESHOLD**  
+défaut : 0.5       
+Vitesse verticale minimale en m / s (seuil bas / haut) permettant le déclenchement de l'enregistrement
 
-**ALARM_SDCARD**     
+**flightstart - FLIGHT_START_MIN_SPEED**   
+défaut : 8 km/h       
+Vitesse au sol minimale en km/h déclenchant l'enregistrement du vol
+
+**flightstart - VARIOMETER_RECORD_WHEN_FLIGHT_START**     
+défaut : 1      
+0 = desactivée, l'enregistrement débute des que le GPS est opérationel    
+1 = Activée, l'enregistrement débutera à la détection du début de vol (vitesse horizontale supérieure à FLIGHT_START_MIN_SPEED et vitesse horizontale inférieure à FLIGHT_START_VARIO_LOW_THRESHOLD ou supérieure à FLIGHT_START_VARIO_HIGH_THRESHOLD  
+
+**systeme - SLEEP_TIMEOUT_MINUTES**   
+défaut : 20 minutes     
+mise en veille après X minutes d'inactivité
+
+**systeme - SLEEP_THRESHOLD_CPS**    
+défaut : 0.5 m       
+seuil de déclenchement d'activité (équivalent à +0.5 Vz)
+
+**systeme - ALARM_SDCARD**     
 1 = Bip d'alarme indiquant que la carte SD n'est pas présente
 
-**ALARM_GPSFIX**    
+**systeme - ALARM_GPSFIX**    
 1 = Bip indiquant que le GPS est opérationnel
 
-**ALARM_FLYBEGIN**     
+**systeme - ALARM_FLYBEGIN**     
 1 = Bip indiquant le début de l'enregistrement du vol
 
-**NO_RECORD**     
+**systeme - NO_RECORD**     
 défaut : 0    
 1 = désactivation de l'enregistrement sur la SDcard
 
-**valeurs de calibration**    
+**systeme - BT_ENABLE**    
+défaut : 0    
+1 = Bluetooth activé 
+
+**systeme - COMPENSATION_TEMP**     
+défaut : -6      
+compensation de la température 
+
+**systeme - COMPENSATION_GPSALTI**      
+défaut : -30     
+compensation de l'altitude du Gps 
+
+### wifi.cfg #
+
+Ce fichier contient les paramètres de connexion au wifi.   
+On peut paramétrer jusqu'à 4 réseaux wifi   
+
+**SSID_1**
+défaut : your_SSID1       
+SSID du premier réseau Wifi
+
+**PASSWORD_1**   
+défaut : your_PASSWORD_for SSID1     
+Mot de passe du premier réseau Wifi    
+
+**SSID_2**    
+**PASSWORD_2**   
+
+**SSID_3**   
+**PASSWORD_3**   
+
+**SSID_4**   
+**PASSWORD_4**   
+
+### variocal.cfg #
+
+Ce fichier contient les valeurs de calibration du GNUVario.
 
 **VERTACCEL_GYRO_CAL_BIAS_00**   
 défaut : 0x00       
@@ -216,75 +252,6 @@ défaut : 15535
 défaut : 5     
 **VERTACCEL_MAG_CAL_BIAS_MULTIPLIER**    
 défaut : 5     
-
-**Parametres Wifi**    
-
-**SSID_1**
-défaut : your_SSID1       
-SSID du premier réseau Wifi
-
-**PASSWORD_1**   
-défaut : your_PASSWORD_for SSID1     
-Mot de passe du premier réseau Wifi    
-
-**SSID_2**    
-**PASSWORD_2**   
-
-**SSID_3**   
-**PASSWORD_3**   
-
-**SSID_4**   
-**PASSWORD_4**   
-
-**BT_ENABLE**    
-défaut : 0    
-1 = Bluetooth activé 
-
-**COMPENSATION_TEMP**     
-défaut : -6      
-compensation de la température 
-
-**COMPENSATION_GPSALTI**      
-défaut : -30     
-compensation de l'altitude du Gps 
-
-
-4) Configuration taux de chute moyen
------------------------------
-
-Si vous souhaitez utiliser l'affichage du taux de chute moyen, suivez cette procèdure
-
-Avec le taux de chute "moyenné" sur une periode, vous pouvez garder les bips très réactifs mais afficher à l'écran votre bilan sur 5 secondes au plus.
-
-Voici la procédure :
-
-    a) Il vous faut la période de votre GPS 
-		  ( même si c'est sûrement 1000 ms ). Chargez le sketch "gps-time-analysis_ESP32" puis attendez le fix. Lorsque le GPS s'est bien stabilisé lisez le chiffre en deuxième position à l'écran. C'est la période du GPS.
-
-    b) Dans HardwareConfig.h entrez votre periode du GPS :
-
-    #define GPS_PERIOD 996 
-
-	c) Si vous voulez un affichage du taux de chute intégré décommentez :
-
-		#define VARIOMETER_DISPLAY_INTEGRATED_CLIMB_RATE
-
-	d) Vous pouvez alors régler la durée de l'intégration 
-	    ( ici 5s ) et la fréquence d'affichage ( ici 2 affichage par secondes )
-
-		#define VARIOMETER_INTEGRATION_TIME 5000
-		#define VARIOMETER_INTEGRATION_DISPLAY_FREQ 2.0
-
-	Ces paramètres sont aussi utilisés pour la finesse.
-
-	e) Si vous voulez afficher le taux de chute en alternance avec la finesse
-
-		#define RATIO_CLIMB_RATE 2
-
-		1: Affichage de la finesse
-		2: Affichage du taux de chute moyen
-		3: Affichage des 2 informations en alternance 
-
 
 
 

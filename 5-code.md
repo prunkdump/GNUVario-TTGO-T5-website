@@ -29,10 +29,11 @@ Extrayez le zip à l'emplacement de votre choix. Cela va créer un repertoire **
 
 ![GitHub téléchargement zip]({{ "/assets/code/code2.jpg" | absolute_url }})
 
-L’installation de l’IDE Arduino a normalement créé un répertoire **Arduino** dans votre dossier personnel. Assurez-vous que ce dossier est vide et copiez le **contenu** du dossier **Gnuvario-TTGO-T5-master** dans le dossier **Arduino**.
+L’installation de l’IDE Arduino a normalement créé un répertoire **Arduino** dans votre dossier personnel.<BR> Assurez-vous que ce dossier est vide et copiez les dossiers  Sources\Beta Code\Gnuvario-E et Sources\Beta Code\libraries du dossier **Gnuvario-TTGO-T5-master** dans le dossier **Arduino**.
 
-![GitHub téléchargement zip]({{ "/assets/code/code3.jpg" | absolute_url }})
-![GitHub téléchargement zip]({{ "/assets/code/code4.jpg" | absolute_url }})
+**IMPORTANT** : Il ne doit y avoir dans ce dossier Arduino que les fichiers / librairies du projet Gnuvario-E.
+
+![GitHub téléchargement zip]({{ "/assets/code/dossierRootArduino.jpg" | absolute_url }})
 
 La méthode avancée: utiliser Git
 -----------------------------
@@ -60,6 +61,7 @@ Ainsi, chaque fois que vous souhaitez mettre à jour le code, tapez les commande
 
 Compiler le code
 -----------------
+En préalable, il faut mettre en marche le vario sans la sdcard, **puis** le raccorder au PC par la prise USB. Il sera reconnu par le PC comme une interface série COMx (exemple : COM3).
 
 Lancez maintenant l'IDE Arduino et ouvrez l'esquisse que vous souhaitez compiler. Par exemple, le croquis **Gnuvario-E.ino**.
 
@@ -68,7 +70,8 @@ Lancez maintenant l'IDE Arduino et ouvrez l'esquisse que vous souhaitez compiler
 Dans le menu **Outils**, **assurez-vous de choisir la bonne carte**. La plus classique de ce projet est l'**ESP32 Dev Module**.
 
 et selectionner partition scheme : **Minimal SPIFFS (1,9 MB APP with OTA / 180 KB SPIFFS)**
- 
+
+Toujours dans le menu **Outils**, choisissez le port série correspondant au vario. 
 
 ![GitHub download zip]({{ "/assets/code/ide1.jpg" | absolute_url }})
 
@@ -76,9 +79,9 @@ Il vous suffit de cliquer sur le bouton **téléverser**.
 
 ![GitHub download zip]({{ "/assets/code/code7.jpg" | absolute_url }})
 
+Ceci va lancer la compilation du code, puis mettre à jour le vario ; le vario redémarrera seul en fin de procédure.
 
-
-
+Vous pouvez maintenant débrancher la sortie USB, arrêter le vario, insérer la sdcard et le démarrer à nouveau.
 
 
 

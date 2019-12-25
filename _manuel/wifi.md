@@ -12,9 +12,9 @@ Le Gnuvario-E embarque un serveur Web, qui va permettre de configurer le Gnuvari
 
 Avant de pouvoir utiliser le Wifi avec le Gnuvario-E, vous devez indiquer le SSID et le mot de passe de votre Box ou de votre téléphone   
 
-Compléter les informations dans le fichiers SETTINGS.TXT. Vous pouvez indiquer jusqu'à 4 réseaux Wifi différents.   
+Compléter les informations dans le fichier wifi.cfg. Vous pouvez indiquer jusqu'à 4 réseaux Wifi différents.   
 
-Si vous ne souhaitez pas utiliser la carte SD, vous devrez compléter le fichier variosettings.h   
+Si vous ne souhaitez pas utiliser la carte SD, vous devrez compléter le fichier variosettings.h (nécessite une compilation du code).
 
 #define DEFAULT_VARIOMETER_SSID_1													"your_SSID1"   
 #define DEFAULT_VARIOMETER_PASSWORD_1											"your_PASSWORD_for SSID1"   
@@ -32,13 +32,13 @@ Si vous ne souhaitez pas utiliser la carte SD, vous devrez compléter le fichier
 
 Au démarrage, appuyer sur le bouton gauche
 
-Dès que le Gnuvario-E est connecté au réseau Wifi, l'adresse de la page Web s'affiche sur l'écran
+Dès que le Gnuvario-E est connecté au réseau Wifi, l'adresse de la page Web s'affiche sur l'écran :
 
 {% include manuelimg.md name="wifi-1.jpg" %}
 
 **Connection à la page Web**
 
-Dans votre navigateur Web, connectez-vous avec l'adresse 
+Dans votre navigateur Web, connectez-vous avec l'adresse indiquée.
 
 {% include manuelimg.md name="wifi-2.jpg" %}
 
