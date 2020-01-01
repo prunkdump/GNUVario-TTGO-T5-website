@@ -25,14 +25,11 @@ github_username:  prunkdump
 collections:
   - tutorials
   - manuel
-  - faq
 collections:
   tutorials:
     output: true
   manuel:
     output: true
-  faq:
-    output: false
 defaults:
   - scope:
       path: ""

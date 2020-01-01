@@ -1,6 +1,6 @@
 ---
 step: 5
-description: Pr"paration de la batterie
+description: Préparation de la batterie
 ---
 
 Pour terminer votre GnuVario-E, vous devez souder le connecteur 2 pins à la batterie.
