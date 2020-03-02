@@ -9,9 +9,9 @@ Le GnuVario-E intégre un accéléromètre, qui doit être calibré.
 
 D'abord sous Windows ou Mac, installez [Python version 2](https://www.python.org/) . Sous Windows, assurez-vous de cocher l'option **add to PATH variable**.
        
-Récupérer le code {% include lienfichier.md name="calibration.zip" lien="fichiers/calibration.zip" %} que vous placerez dans un dossier nommé par exemple "calibrage"       
+Récupérer le code {% include lienfichier.md name="calibration.zip" lien="fichier/calibration.zip" %} que vous placerez dans un dossier nommé par exemple "calibrage"       
       
-Copier le fichier {% include lienfichier.md name="variocal.cfg" lien="fichiers/variocal.cfg" %} vierge sur la carte SD        
+Copier le fichier {% include lienfichier.md name="variocal.cfg" lien="fichier/variocal.cfg" %} vierge sur la carte SD        
        
 Assurez-vous que votre carte SD est à l'intérieur du variomètre.     
          
@@ -32,6 +32,8 @@ Cela va créé un fichier "RECORD**.CAL" sur la carte SD. Copiez ce fichier dans
 
 Sous Windows ou Mac, lancez l'**Idle** Python et ouvrez le programme "calibrage/calibrer.py". Appuyez sur "F5" pour exécuter.
     
+{% include manuelimg.md name="python_file.jpg" %}		
+		
 ou  
       
 {% highlight shell_session %}
@@ -48,4 +50,35 @@ Sous Linux, lancez simplement :
       
 Pour terminer la calibration, copier l'ensemble des paramètres de calibration dans le fichier *variocal.cfg* présent sur la carte SD    
 
+{% include manuelimg.md name="Calibrate_python.jpg" %}		
 
+{% highlight shell_session %}
+Fichier variocal.cfg
+
+[VERSION=1.0]
+
+/* Calibration */
+[VERTACCEL_GYRO_CAL_BIAS_00=0xff]
+[VERTACCEL_GYRO_CAL_BIAS_01=0xff]
+[VERTACCEL_GYRO_CAL_BIAS_02=0x3f]
+[VERTACCEL_GYRO_CAL_BIAS_03=0xb3]
+[VERTACCEL_GYRO_CAL_BIAS_04=0x00]
+[VERTACCEL_GYRO_CAL_BIAS_05=0x00]
+[VERTACCEL_GYRO_CAL_BIAS_06=0x00]
+[VERTACCEL_GYRO_CAL_BIAS_07=0x00]
+[VERTACCEL_GYRO_CAL_BIAS_08=0x01]
+[VERTACCEL_GYRO_CAL_BIAS_09=0x00]
+[VERTACCEL_GYRO_CAL_BIAS_10=0xf7]
+[VERTACCEL_GYRO_CAL_BIAS_11=0xff]
+[VERTACCEL_ACCEL_CAL_BIAS_00=4240]
+[VERTACCEL_ACCEL_CAL_BIAS_01=12585]
+[VERTACCEL_ACCEL_CAL_BIAS_02=17394]
+[VERTACCEL_ACCEL_CAL_SCALE= -136]
+[VERTACCEL_MAG_CAL_BIAS_00=11068]
+[VERTACCEL_MAG_CAL_BIAS_01=20912]
+[VERTACCEL_MAG_CAL_BIAS_02=17504]
+[VERTACCEL_MAG_CAL_PROJ_SCALE=-17821]
+[VERTACCEL_ACCEL_CAL_BIAS_MULTIPLIER=7]
+[VERTACCEL_MAG_CAL_BIAS_MULTIPLIER=7]
+
+{% endhighlight %}

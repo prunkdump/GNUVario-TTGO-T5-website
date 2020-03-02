@@ -1,1 +1,1 @@
-![{{include.name}}]({{ "http://gnuvario-e.yj.fr/fichiers/" | append: include.name | absolute_url }})
+![{{include.name}}]({{ "http://gnuvario-e.yj.fr/fichier/" | append: include.name | absolute_url }})
