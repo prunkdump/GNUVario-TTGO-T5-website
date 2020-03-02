@@ -17,16 +17,40 @@ title: "GNUVario-E : Le variomètre Open Source et Open Hardware"
 description: >- # this means to ignore newlines until "baseurl:"
   GNUVario-E est un projet visant à distribuer un logiciel open source
   et un variomètre open hardware basé sur la plate-forme ESP32.
-baseurl: "/GNUVario-TTGO-T5-website" # the subpath of your site, e.g. /blog
+  
+#baseurl: "/GNUVario-TTGO-T5-website" # the subpath of your site, e.g. /blog
+baseurl: "/GNUVarioFR-E" # the subpath of your site, e.g. /blog
+#baseurl: "/GNUVario-TTGO-T5-website" # the subpath of your site, e.g. /blog
+
 url: "https://prunkdump.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#url:  "https://jpg63.github.io"
+#url: "https://ratamuse.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
 #twitter_username: 
 github_username:  prunkdump
 #github_username:  jpg63
+#github_username:  ratamuse
+
 collections:
+  - materiel
+  - slicer
   - tutorials
+  - logiciel
+  - code
+  - config
   - manuel
   - faq
 collections:
+  materiel:
+    output: true
+  logiciel:
+    output: true
+  code:
+    output: true
+  config:
+    output: true
+  slicer:
+    output: true
   tutorials:
     output: true
   manuel:
@@ -34,6 +58,36 @@ collections:
   faq:
     output: false
 defaults:
+  - scope:
+      path: ""
+      type: "materiel"
+    values:
+      layout: materiel
+      title: Matériel
+  - scope:
+      path: ""
+      type: "logiciel"
+    values:
+      layout: logiciel
+      title: Logiciel
+  - scope:
+      path: ""
+      type: "code"
+    values:
+      layout: code
+      title: Code
+  - scope:
+      path: ""
+      type: "config"
+    values:
+      layout: config
+      title: Configuration
+  - scope:
+      path: ""
+      type: "slicer"
+    values:
+      layout: slicer
+      title: Boitier3d
   - scope:
       path: ""
       type: "tutorials"
@@ -66,3 +120,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+

@@ -22,6 +22,6 @@ Choisir ensuite le dernier fichier .bin, en utilisant les paramètres suivants (
 ![Flash_download_tools]({{ '/assets/manuel_img/flashTools.jpg' | relative_url }})
 
 Appuyez sur le bouton Start ; le carré vert 'IDLE' indique alors 'Download', et une barre de progression verte s'affiche en bas de l'utilitaire.  
-L'écriture du logiciel prend environ 2mn ; lorsque terminé, le carré vert affiche 'FINISH'.
+L'écriture du logiciel prend environ 2mn ; lorsquelle est terminée, le carré vert affiche 'FINISH'.
 
 Vous pouvez alors couper l'alimentation du Gnuvario-E, débrancher le port usb, insérer la sdcard et redémarrer le vario.

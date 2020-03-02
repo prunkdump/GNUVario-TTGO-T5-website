@@ -227,7 +227,228 @@
     float: right;
 }
 
+.slicer_nav {
 
+    a {
+	display: inline-block;
+	//display: flex;
+	//display: flex;                   /* 1 */
+	//align-items: flex-start;         /* 2 */
+	//justify-content: space-between;  /* 3 */
+	//flex-direction: row;
+	
+	border-radius: 5px;
+	padding: 8px 16px;
+	margin: 1px;
+	color: #ffffff;
+    }
+}
+
+.slicer {
+    img {
+	border-radius: 2%;
+    }
+}
+
+.slicer_previous {
+
+    float: left;
+    background-color:  $green-color;
+    //justify-content: flex-start;
+}
+
+.slicer_home {
+    background-color: $grey-color-dark;
+}
+
+.slicer_next {
+
+    //justify-content: flex-end;
+    background-color:  $green-color;
+    float: right;
+}
+
+/**
+ * Logiciel
+ */
+ 
+.logiciel_nav {
+
+    a {
+	display: inline-block;
+	//display: flex;
+	//display: flex;                   /* 1 */
+	//align-items: flex-start;         /* 2 */
+	//justify-content: space-between;  /* 3 */
+	//flex-direction: row;
+	
+	border-radius: 5px;
+	padding: 8px 16px;
+	margin: 1px;
+	color: #ffffff;
+    }
+}
+
+.logiciel {
+    img {
+	border-radius: 2%;
+    }
+}
+
+.logiciel_previous {
+
+    float: left;
+    background-color:  $green-color;
+    //justify-content: flex-start;
+}
+
+.logiciel_home {
+    background-color: $grey-color-dark;
+}
+
+.logiciel_next {
+
+    //justify-content: flex-end;
+    background-color:  $green-color;
+    float: right;
+}
+ 
+/**
+ * Config
+ */
+
+.config_nav {
+
+    a {
+	display: inline-block;
+	//display: flex;
+	//display: flex;                   /* 1 */
+	//align-items: flex-start;         /* 2 */
+	//justify-content: space-between;  /* 3 */
+	//flex-direction: row;
+	
+	border-radius: 5px;
+	padding: 8px 16px;
+	margin: 1px;
+	color: #ffffff;
+    }
+}
+
+.config {
+    img {
+	border-radius: 2%;
+    }
+}
+
+.config_previous {
+
+    float: left;
+    background-color:  $green-color;
+    //justify-content: flex-start;
+}
+
+.config_home {
+    background-color: $grey-color-dark;
+}
+
+.config_next {
+
+    //justify-content: flex-end;
+    background-color:  $green-color;
+    float: right;
+}
+ 
+/**
+ * Code
+ */
+ 
+.code_nav {
+
+    a {
+	display: inline-block;
+	//display: flex;
+	//display: flex;                   /* 1 */
+	//align-items: flex-start;         /* 2 */
+	//justify-content: space-between;  /* 3 */
+	//flex-direction: row;
+	
+	border-radius: 5px;
+	padding: 8px 16px;
+	margin: 1px;
+	color: #ffffff;
+    }
+}
+
+.code {
+    img {
+	border-radius: 2%;
+    }
+}
+
+.code_previous {
+
+    float: left;
+    background-color:  $green-color;
+    //justify-content: flex-start;
+}
+
+.code_home {
+    background-color: $grey-color-dark;
+}
+
+.code_next {
+
+    //justify-content: flex-end;
+    background-color:  $green-color;
+    float: right;
+} 
+ 
+ 
+/**
+ * Materiel footer
+ */
+ 
+.materiel_nav {
+
+    a {
+	display: inline-block;
+	//display: flex;
+	//display: flex;                   /* 1 */
+	//align-items: flex-start;         /* 2 */
+	//justify-content: space-between;  /* 3 */
+	//flex-direction: row;
+	
+	border-radius: 5px;
+	padding: 8px 16px;
+	margin: 1px;
+	color: #ffffff;
+    }
+}
+
+.materiel {
+    img {
+	border-radius: 2%;
+    }
+}
+
+.materiel_previous {
+
+    float: left;
+    background-color:  $green-color;
+    //justify-content: flex-start;
+}
+
+.materiel_home {
+    background-color: $grey-color-dark;
+}
+
+.materiel_next {
+
+    //justify-content: flex-end;
+    background-color:  $green-color;
+    float: right;
+}
+  
 /**
  * Site footer
  */

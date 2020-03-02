@@ -52,9 +52,9 @@ Terminez en plaçant le HP au font du support et en refermant le boitier
 
 Votre GnuVario est terminé
 1. Chargez la batterie jusqu'à ce qu'elle soit pleine.
-2. Copiez les fichiers du dossier RootSD à la racine de la carte SD et insérez la dans le connecteur à gauche
+2. Copiez les fichiers du dossier RootSD à la racine de la carte SD et insérez la dans le connecteur à gauche.
 3. Mettez le variomètre à jour via le port USB.
 4. Mettez le Gnuvario-E sous tension. 
-5. Patientez quelques secondes, un bip retentie et l'écran s'allume
-5. Si cela ne fonctionne pas, vérifiez vos soudures.
+5. Patientez quelques secondes, un bip retentit et l'écran s'allume.
+6. Si cela ne fonctionne pas, vérifiez vos soudures.
 {% include tutoimg.md name="20190727_122628b.jpg" %}

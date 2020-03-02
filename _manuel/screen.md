@@ -11,7 +11,7 @@ L'heure et la Durée du vol s'affichent alternativement, l'heure est indiquée a
 Quand la durée du vol est inférieure à 1h l'indication est "min:sec".    
 Après 1h de vol on a "heure:min".
 
-La finesse et le taux de chute peuvent être paramètrés pour n'avoir qu'une seule information au choix ou les 2 alternativement
+La finesse et le taux de chute peuvent être paramétrés pour n'avoir qu'une seule information au choix ou les 2 alternativement
 
 La flèche d'indication de montée / descente donne une information intégrée sur X sec associée
  au taux de chute

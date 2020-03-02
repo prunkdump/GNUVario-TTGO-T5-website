@@ -34,7 +34,7 @@ Commencez par souder **une** broche, vérifiez son emplacement.
 Souder les autres broches. **Soyez très prudent ! N'oubliez pas certaines d'entre elles**.
 {% include tutoimg.md name="IMG_8760.JPG" %}
 
-Coupez les pins au plus pret des soudures.
+Coupez les pins au plus prês des soudures.
 {% include tutoimg.md name="IMG_8761.JPG" %}
 {% include tutoimg.md name="IMG_8762.JPG" %}
 
@@ -43,7 +43,7 @@ Enlevez l'isolant en utilisant un tournevis fin
 {% include tutoimg.md name="IMG_8764.JPG" %}
 {% include tutoimg.md name="IMG_8765.JPG" %}
 
-Ensuite, placez le MPU contre le PCB comme ceci:
+Ensuite, placez le MPU contre le PCB comme ceci :
 {% include tutoimg.md name="IMG_8767.JPG" %}
 {% include tutoimg.md name="IMG_8768.JPG" %}
 {% include tutoimg.md name="20190818_091338a.jpg" %}

@@ -1,28 +1,22 @@
 ---
-layout: page
-title: Boitier3D
-linkdesc: Le boitier 3D du GNUVario
-linkmsg: Trouver !
-linktarget: "/assets/3D case.zip"
+layout: slicer
+title: Boîtier3D
+description: Introduction
 ---
 
-Le GNUVario-E utilise un boitier 3D que vous allez pouvoir imprimer ou faire imprimer.
+Le GNUVario-E utilise un boîtier imprimable en 3D.
  
-![TTGO-T5]({{ '/assets/boitier_3d_1.jpg' | relative_url }})
+{% include boitier3d.md name="boitier_3d_1.jpg" %}
  
-[le boitier pour écran 1,54'' V2.01]({{ '/assets/3D_case154.zip' | relative_url }})
+{% include lienfichier.md name="Le boîtier pour écran 1,54''" lien="fichiers/3D_case154.zip" %}
 
-![TTGO-T5]({{ '/assets/Fashion week Rouge gris.jpg' | relative_url }})
+{% include boitier3d.md name="Fashion week Rouge gris.jpg" %}
 
-![TTGO-T5]({{ '/assets/boitier_assemblage.jpg' | relative_url }})
+{% include lienfichier.md name="Le boîtier pour écran 2,9'' en mode paysage" lien="fichiers/3D_case290.zip" %}
 
-[le boitier pour écran 2,9'' V2.01]({{ '/assets/3D_case29.zip' | relative_url }})
+{% include boitier3d.md name="boitier_3d_2.jpg" %}
 
-![TTGO-T5]({{ '/assets/boitier_3d_2.jpg' | relative_url }})
+{% include lienfichier.md name="Le boîtier pour écran 2,9'' en mode portrait" lien="fichiers/3D_case291.zip" %}
 
-
-
-
-
-
+{% include boitier3d.md name="boitier_3d_3.jpg" %}
 
