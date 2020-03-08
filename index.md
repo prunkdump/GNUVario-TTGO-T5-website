@@ -21,6 +21,7 @@ Caractéristiques :
 * Paramétrage du vario via une page Web
 * Récupération des vols en Wifi 
 * Multi écran
+* Affichage Altitude AGL
 * Paramétrage du son par courbe (à venir)
 * Paramétrage des écrans (à venir)
 * Mise en veille prolongée
@@ -31,11 +32,12 @@ Liens :
 * [GitHub](https://github.com/prunkdump/GNUVario-TTGO-T5)
 * [Forum](http://www.parapentiste.info/forum/developpements-hardware-software/diy-gnuvario-variometre-opensource-openhardware-arduino-t48334.0.html;new;topicseen#new)
 * [Site Web](https://prunkdump.github.io/GNUVario-TTGO-T5-website/)
-
+* [Site de ressources](http://gnuvario-e.yj.fr/#)
 
 Contribution :
 ----------
 
+* jeromev Développeur
 * jpg63 Développeur  / site internet       
 * pixyz Développeur web       
 * prunkdump Développeur / Code source initial        
@@ -44,4 +46,4 @@ Contribution :
 
 Version :
 ---------
-* Site internet 1.06i
+* Site internet 1.06j

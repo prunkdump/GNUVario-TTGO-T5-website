@@ -30,8 +30,8 @@ la version de {% include lienfichier.md name="Développement" lien="update/Gnuva
 
 La carte SD embarque un site web et des fichiers de configuration. Il existe une arborescence pour la version stable et une pour la version beta
 
-RootSD pour la version {% include lienfichier.md name="Stable du Firmware" lien="update/RootSD/Stable/RootSD.zip" %}     
-RootSD pour la version {% include lienfichier.md name="Beta du Firmware" lien="update/RootSD/Beta/RootSD.zip" %}    
+RootSD pour la version {% include lienfichier.md name="Stable du Firmware" lien="fichier/RootSD_Stable.zip" %}     
+RootSD pour la version {% include lienfichier.md name="Beta du Firmware" lien="fichier/RootSD_Beta.zip" %}    
 
 **Le dossier www**     
 
@@ -51,3 +51,9 @@ www pour la version {% include lienfichier.md name="Beta du Firmware" lien="dl-w
 
 www pour la version {% include lienfichier.md name="Stable du Firmware" lien="dl-web/Gnuvario291" %}     
 www pour la version {% include lienfichier.md name="Beta du Firmware" lien="dl-web/Gnuvario291b" %}    
+
+**Le dossier AGL**
+
+Sur la carte SD, le dossier ALG contient les fichiers nécessaires au fonctionnement de l'affichage de l'altitude AGL.
+
+[Téléchargement ici](https://vps.skybean.eu/agl/)
