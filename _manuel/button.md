@@ -6,25 +6,27 @@ description: Les boutons
 **UTILISATION DES TOUCHES**                                                                                       
  
 | Ecran | Touche | Fonction |
-|-------------|:---------:|-------------------------------------------------------------|
-|Init         | Gauche    | passage en mode Wifi                                        |
-|Init         | Droite    | Calibration                                                 |
-|             |           |                                                             |
-| Vario       | Centre    | Coupe et remet le son (Mute)                                |
-| Vario       | Centre 3s | Mode veille                                                 |
-| Vario       | Gauche    | écran précédent                                             |
-| Vario       | Droite    | écran suivant                                               |
-|             |           |                                                             |
-| Wifi        | Gauche    | Sort du mode Wifi                                           |
-|             |           |                                                             |
-| Sound       | Gauche    | baisse le volume                                            |
-| Sound       | Droit     | Monte le volume                                             |
-| Sound       | Centre    | Entre dans la configuration / Valide la configuration       |
-|             |           |                                                             |
-| Sleep       | Gauche    | Valide la mise en veille                                    |
-|             |           |                                                             |
-| Calibration | Centre    | Démarre la calibration                                      |
-| Calibration | Gauche    | Sort du mode calibration (reboot)                           |
+|-------------|:---------:|---------------------------------------------------------------|
+|Init         | Gauche    | passage en mode Wifi                                          |
+|Init         | Droite    | Calibration                                                   |
+|             |           |                                                               |
+| Vario       | Centre    | Coupe et remet le son (Mute)                                  |
+| Vario       | Centre 3s | Mode veille                                                   |
+| Vario       | Gauche    | écran précédent                                               |
+| Vario       | Gauche    | Démarrage du début du vol manuellement (quand le GPS est fixé |
+| Vario       | Gauche 2s | Calibration de l'altitude avec l'AGL                          |
+| Vario       | Droite    | écran suivant                                                 |
+|             |           |                                                               |
+| Wifi        | Gauche    | Sort du mode Wifi                                             |
+|             |           |                                                               |
+| Sound       | Gauche    | baisse le volume                                              |
+| Sound       | Droit     | Monte le volume                                               |
+| Sound       | Centre    | Entre dans la configuration / Valide la configuration         |
+|             |           |                                                               |
+| Sleep       | Gauche    | Valide la mise en veille                                      |
+|             |           |                                                               |
+| Calibration | Centre    | Démarre la calibration                                        |
+| Calibration | Gauche    | Sort du mode calibration (reboot)                             |
  
 	
 **L'écran de démarrage (Init) :**
