@@ -37,13 +37,13 @@ Liens :
 Contribution :
 ----------
 
-* jeromev Développeur
+* jeromev Développeur / AGL
 * jpg63 Développeur  / site internet       
-* pixyz Développeur web       
+* pixyz Développeur / Développeur web       
 * prunkdump Développeur / Code source initial        
 * ratamuse  PCB / Boitier 3D / Développeur / contribution site internet     
 * vmath54  Contribution site internet      
 
 Version :
 ---------
-* Site internet 1.06j
+* Site internet 1.06l
