@@ -5,7 +5,7 @@ description: Description de l'écran
 
 Voici la description de l'écran du GnuVario-E
 
-{% include manuelimg.md name="ecran_vario.jpg" %}
+{%include manuelimg.md name="ecran291.png"%}
 
 L'heure et la Durée du vol s'affichent alternativement, l'heure est indiquée avec un "h" (12h36) et la durée avec ":" (05:21).    
 Quand la durée du vol est inférieure à 1h l'indication est "min:sec".    
