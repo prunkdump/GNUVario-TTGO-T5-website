@@ -6,7 +6,7 @@ description: Wifi
 Le Gnuvario-E embarque un serveur Web, qui va permettre de configurer le Gnuvario, le mettre à jour,
  récupérer les fichiers de vol mais aussi de copier ou récupérer des fichiers sur la carte SDCard
  
-{% include manuelimg.md name="connection_wifi.jpg" %}
+{% include manuelimg.md name = "ecran291wifireboot.png"%}
 
 **Paramètrage du Wifi**      
 
@@ -32,13 +32,11 @@ Si vous ne souhaitez pas utiliser la carte SD, vous devrez compléter le fichier
 
 Au démarrage, appuyer sur le bouton gauche
 
-Dès que le Gnuvario-E est connecté au réseau Wifi, l'adresse de la page Web s'affiche sur l'écran :
-
-{% include manuelimg.md name="wifi-1.jpg" %}
+Dès que le Gnuvario-E est connecté au réseau Wifi, l'adresse IP de la page Web s'affiche sur l'écran :
 
 **Connection à la page Web**
 
-Dans votre navigateur Web, connectez-vous avec l'adresse indiquée.
+Dans votre navigateur Web, connectez-vous avec l'adresse IP indiquée.
 
-{% include manuelimg.md name="wifi-2.jpg" %}
+
 

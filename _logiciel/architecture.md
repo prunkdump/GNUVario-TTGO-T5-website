@@ -5,7 +5,7 @@ description: Architecture
 
 Voici la description générale du logiciel du Gnuvario-E
 
-Pour fonctionner le Gnuvario-E a besoin d'un firmware et d'une carte SD avec une organisation particulère
+Pour fonctionner le Gnuvario-E a besoin d'un firmware et d'une carte SD avec une organisation particulière
 
 **Le Firmware**      
    
@@ -54,6 +54,6 @@ www pour la version {% include lienfichier.md name="Beta du Firmware" lien="dl-w
 
 **Le dossier AGL**
 
-Sur la carte SD, le dossier ALG contient les fichiers nécessaires au fonctionnement de l'affichage de l'altitude AGL.
-
+Sur la carte SD, le dossier ALG contient les fichiers nécessaires au fonctionnement de l'affichage de l'altitude sol.
+{% include logicielimg.md name="AGL.jpg" %}
 [Téléchargement ici](https://vps.skybean.eu/agl/)

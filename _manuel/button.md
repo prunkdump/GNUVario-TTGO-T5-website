@@ -19,36 +19,36 @@ description: Les boutons
 |             |           |                                                               |
 | Wifi        | Gauche    | Sort du mode Wifi                                             |
 |             |           |                                                               |
-| Sound       | Gauche    | baisse le volume                                              |
-| Sound       | Droit     | Monte le volume                                               |
-| Sound       | Centre    | Entre dans la configuration / Valide la configuration         |
+| Son         | Gauche    | baisse le volume                                              |
+| Son         | Droit     | Monte le volume                                               |
+| Son         | Centre    | Entre dans la configuration / Valide la configuration         |
 |             |           |                                                               |
-| Sleep       | Gauche    | Valide la mise en veille                                      |
+| Veille      | Gauche    | Valide la mise en veille                                      |
 |             |           |                                                               |
 | Calibration | Centre    | Démarre la calibration                                        |
 | Calibration | Gauche    | Sort du mode calibration (reboot)                             |
  
 	
-**L'écran de démarrage (Init) :**
+## **Ecran de démarrage (Init) :**{: style="color:   #138ca2; opacity: 1;" }
 
-{% include manuelimg.md name="page_init.jpg" %}
+{% include manuelimg.md name="ecran291init.png" %}
 
-**Page Wifi :**
+## **Wifi page :**{: style="color:   #138ca2; opacity: 1;" }
 
-{% include manuelimg.md name="page_wifi.jpg" %}
+{% include manuelimg.md name="ecran291wifireboot.png" %}
 
-**Page principale (Vario) :**
+## **Page principale :**{: style="color:   #138ca2; opacity: 1;" }
 
-{% include manuelimg.md name="page_vario.jpg" %}
+{% include manuelimg.md name="ecran291mainpage.png" %}
 
-**Page réglage du volume (Sound) :**
+## **Page réglage du volume :**{: style="color:   #138ca2; opacity: 1;" }
 
-{% include manuelimg.md name="page_volume.jpg" %}
+{% include manuelimg.md name="ecran291sound.png" %}
 
-**Page Mise en veille (Sleep) :**
+## **Page mise en veille :**{: style="color:   #138ca2; opacity: 1;" }
 
-{% include manuelimg.md name="page_sleep.jpg" %}
+{% include manuelimg.md name="ecran291standby.png" %}
 
-**Page Calibration  :**
+## **Page calibration  :**{: style="color:   #138ca2; opacity: 1;" }
 
-{% include manuelimg.md name="calibration.jpg" %}
+{% include manuelimg.md name="ecran291calib2.png" %}

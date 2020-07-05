@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "GNUVario-E : Le variomètre Open Source et Open Hardware"
+title: "GNUVario-E: Le variomètre Open Source et Open Hardware"
 description: >- # this means to ignore newlines until "baseurl:"
   GNUVario-E est un projet visant à distribuer un logiciel open source
   et un variomètre open hardware basé sur la plate-forme ESP32.
-  
+google_analytics: UA-171675366-2
 baseurl: "/GNUVario-TTGO-T5-website" # the subpath of your site, e.g. /blog
 #baseurl: "/GNUVarioFR-E" # the subpath of your site, e.g. /blog
 #baseurl: "/GNUVario-TTGO-T5-website" # the subpath of your site, e.g. /blog
@@ -40,6 +40,8 @@ collections:
   - config
   - manuel
   - faq
+  - download
+  - language
 collections:
   materiel:
     output: true
@@ -57,6 +59,10 @@ collections:
     output: true
   faq:
     output: false
+  download: 
+    output: true 
+  language: 
+    output: true
 defaults:
   - scope:
       path: ""
@@ -100,6 +106,18 @@ defaults:
     values:
       layout: manuel
       title: Manuel Utilisateur
+  - scope:
+      path: ""
+      type: "download"
+    values:
+      layout: download
+      title: Téléchargement
+  - scope:
+      path: ""
+      type: "language"
+    values:
+      layout: language
+      title: language      
 
 # Build settings
 markdown: kramdown
