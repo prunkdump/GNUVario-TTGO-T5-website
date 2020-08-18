@@ -17,7 +17,7 @@ Attente de la position GPS.
 
 |                                  |        	    |		{%include manuelimg.md name="GPSresearch.png"%}
 
-Aquisition GPS effectuée. Affichage du nombre de barres, proportionelle à la qualité du signal GPS. En attente du démarrage de l'enregistrement du vol.
+Aquisition GPS effectuée. Affichage du nombre de barres, proportionel à la qualité du signal GPS. En attente du démarrage de l'enregistrement du vol.
 
 |                                  |        	     |		{%include manuelimg.md name="GPSfixed.png"%}
 
