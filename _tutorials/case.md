@@ -32,7 +32,7 @@ Placez l'antenne dans le support prévu dans le font du boitier.
 {% include tutoimg.md name="IMG_8831.JPG" %}
 {% include tutoimg.md name="IMG_8832.JPG" %}
 
-Vérifiez que le connecteur de l'antenne ne touche pas la batterie de sauvegarde du GPS. Cela entrainerait un court circuit. Vérifiez de nouveau à la fermeture du boîtier.
+Vérifiez que le connecteur de l'antenne ne touche pas la batterie de sauvegarde du GPS. Cela entrainerait un court circuit. Vérifiez de nouveau à la fermeture du boîtier. Le câble ne doit pas pouvoir faire pivoter le connecteur et causer un contact. Mettre un point de colle si nécessaire. 
 {% include tutoimg.md name="connecteur.jpeg" %}
 
 Placez le haut parleur dans la fixation disponible sur le couvercle du boitier **sans l'enfoncer complétement**.
