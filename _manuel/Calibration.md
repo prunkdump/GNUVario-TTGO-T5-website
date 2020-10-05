@@ -7,7 +7,12 @@ description: La calibration
 
 Le GnuVario-E intégre un accéléromètre, qui doit être calibré.
 
-D'abord sous Windows ou Mac, installez [Python version 2](https://www.python.org/) . Sous Windows, assurez-vous de cocher l'option **add to PATH variable**.
+D'abord sous Windows ou Mac, installez [Python (version 2 ou version 3)](https://www.python.org/) . Sous Windows, assurez-vous de cocher l'option **add to PATH variable**.
+
+Installer la librairie python 'numpy' : 
+{% highlight shell_session %}
+c:>pip install numpy
+{% endhighlight %}
        
 Récupérer le code {% include lienfichier.md name="calibration.zip" lien="fichier/calibration.zip" %} que vous placerez dans un dossier nommé par exemple "calibrage"       
       
