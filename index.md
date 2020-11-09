@@ -46,4 +46,4 @@ Contribution :
 
 Version :
 ---------
-* Site internet 1.06o
+* Site internet 1.06p
