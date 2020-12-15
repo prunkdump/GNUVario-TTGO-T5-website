@@ -1,5 +1,5 @@
 ---
-step: 7
+step: 6
 description: La calibration
 ---
 
