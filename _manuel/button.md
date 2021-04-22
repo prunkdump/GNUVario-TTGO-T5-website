@@ -51,4 +51,4 @@ description: Les boutons
 
 ## **Page calibration  :**{: style="color:   #138ca2; opacity: 1;" }
 
-{% include manuelimg.md name="ecran291calib2.png" %}
+{% include manuelimg.md name="ecran291calib2.png" %} 
