@@ -12,7 +12,7 @@ Caractéristiques :
 * Altitude haute précision avec code ms5611 amélioré
 * Vitesse verticale haute précision avec accéléromètre InvenSense
 * Filtrage des mesures grace au DMP du MPU9250 et un filtre de Kalman
-* Affichage sur un écran E-paper Waveshare de 1,54” ou 2,9": altitude, vitesse verticale, vitesse au sol, ...
+* Affichage sur un écran E-paper Waveshare de 1,54” ou Good Display 2,9" (GDEW029M06): altitude, vitesse verticale, vitesse au sol, ...
 * GPS 
 * Enregistrement des vols sur une carte SD 
 * Communication Bluetooth avec appareil externe (à venir)
@@ -46,4 +46,4 @@ Contribution :
 
 Version :
 ---------
-* Site internet 1.06r
+* Site internet 1.06s
