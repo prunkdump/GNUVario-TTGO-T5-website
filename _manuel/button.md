@@ -26,7 +26,7 @@ description: Les boutons
 | Veille      | Gauche    | Valide la mise en veille                                      |
 |             |           |                                                               |
 | Calibration | Centre    | Démarre la calibration                                        |
-| Calibration | Gauche    | Sort du mode calibration (reboot)                             |
+| Calibration | Gauche 2s | Sort du mode calibration (reboot)                             |
  
 	
 ## **Ecran de démarrage (Init) :**{: style="color:   #138ca2; opacity: 1;" }
