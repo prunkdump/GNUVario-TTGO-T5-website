@@ -25,3 +25,14 @@ Appuyez sur le bouton Start ; le carré vert 'IDLE' indique alors 'Download', et
 L'écriture du logiciel prend environ 2mn ; lorsquelle est terminée, le carré vert affiche 'FINISH'.
 
 Vous pouvez alors couper l'alimentation du Gnuvario-E, débrancher le port usb, insérer la sdcard et redémarrer le vario.
+
+**ATTENTION**
+
+Si vous avez compilé le code source avec PlatformIO au lieu de l'IDE Arduino, il est nécessaire d'ajouter la table de partition en 0x8000 que vous trouverez dans votre dossier de compilation .pio.
+
+Les binaires disponibles sur la page de téléchargement sont compilés avec l'IDE Arduino.
+
+{% include manuelimg.md name="code&partition.PNG" %}
+
+Enfin, si vous avez effacé l'ensemble de votre flash il vous faudra charger le bootloader en 0X1000.
+le code bin se trouve sur <https://github.com/espressif/arduino-esp32> dans l'espace tools.
