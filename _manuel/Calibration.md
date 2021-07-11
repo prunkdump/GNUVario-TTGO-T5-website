@@ -5,15 +5,15 @@ description: La calibration
 
 **Il est important de calibrer les accéléromètres**
 
-Le GnuVario-E intégre un accéléromètre, qui doit être calibré.
+Le GnuVario-E intègre un accéléromètre, qui doit être calibré.
 
 **Procédure:**
 
-Depuis la version 0.10.2 du webserveur, la procédure de calibration est simplifiée.
+Depuis la version 0.10.2 du serveur web, la procédure de calibration est simplifiée.
 
 {% include manuelimg.md name="calibrationweb1.jpg" %}
 
-**1.** Depuis le serveur web, onglet "Carte SD" ou directement sur la carte SD, vérifiez que le fichier variocal.cfg soit le fichier vierge disponible dans le dossier RootSD.
+**1.** Depuis le serveur web, onglet «~Carte SD~» ou directement sur la carte SD, vérifiez que le fichier `variocal.cfg` est bien le fichier vierge disponible dans le dossier `RootSD`, dont voici un aperçu du contenu.
 
 {% highlight shell_session %}
 Fichier variocal.cfg vierge
@@ -46,43 +46,41 @@ Fichier variocal.cfg vierge
 
 {% endhighlight %}
 
+**2.** Effacez le fichier `RECORD00.CAL` s'il est présent.
 
-**2.** Effacez le fichier "RECORD00.CAL si il est présent.
+**3.** Redémarrez le vario puis effectuez la manipulation de calibration~: 
 
-**3.** Redémarrez le vario puis effectuez la manipulation de calibration: 
+Passez en mode calibration en appuyant sur le bouton droit au démarrage (au
+moment de l'écran d'init). Vous avez quelques secondes pour placer le vario à
+plat et appuyer sur le bouton central.
 
-Passez en mode calibration en appuyant sur le bouton droit au démarrage (au moment de l'écran d'init).          
-Vous avez quelques secondes pour placer le vario à plat et appuyer sur le bouton central.
+Pour être optimale, la calibration ne doit pas se faire sur un axe nord/sud. Si vous savez ou est le nord, essayez de décaler de 45° le vario par rapport au nord (quand il est a plat sur la table).
 
-Pour être optimal, la calibration ne doit pas se faire sur un axe nord/sud. Si vous savez ou est le nord, essayez de décaler de 45° le vario par rapport au nord (quand il est a plat sur la table)     
+**Attendez les 3 bips** puis commencez à faire pivoter le vario dans toutes les
+directions en vous aidant d'un support (carton, livre) afin de le stabiliser sur
+sa tranche. Vous devez faire environ 5 à 6 déplacements par face en attendant le
+bip entre chaque déplacement. Plus vous ferez de mesures, plus la calibration
+sera précise. **ATTENTION il est indispensable de n'oublier aucune face**
 
-**Attendez les 3 bips** puis commencez à faire pivoter le vario dans toutes les directions en vous aidant d'un support (carton, livre) afin de le stabiliser sur sa tranche.     
-Vous devez faire environ 5 à 6 déplacements par face en attendant le bip entre chaque déplacement   
-Plus vous ferez de mesures, plus la calibration sera précise.          
-**ATTENTION il est indispensable de n'oublier aucune face**      
+À la fin, appuyez sur le bouton gauche du vario pendant au moins deux secondes pour terminer la calibration. Le vario redémarre.
 
-A la fin, appuyez sur le bouton gauche du vario pendant au moins deux secondes pour terminer la calibration. Le vario redémarre.       
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6yxoZcxxzVY"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6yxoZcxxzVY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-
-
-
-**4.** Retournez sur le serveur web puis allez sur l'onglet "Configuration", puis "CALIBRATION"
+**4.** Retournez sur le serveur web puis allez sur l'onglet «~Configuration~», puis «~CALIBRATION~»
 
 {% include manuelimg.md name="calibrationweb3.jpg" %}
 
-Appuyez sur "Lancer la génération du fichier de calibration". Le fichier RECORD00.CAL créé pendant la phase de calibration est envoyé sur un serveur distant qui calcule les bonnes valeurs et met à jour le fichier Variocal.cfg.  
+Appuyez sur «~Lancer la génération du fichier de calibration~». Le fichier `RECORD00.CAL` créé pendant la phase de calibration est envoyé sur un serveur distant qui calcule les bonnes valeurs et met à jour le fichier Variocal.cfg.
 
-Si le message "Calcul du fichier de calibration OK apparait, c'est que tout s'est bien passé. Votre vario est calibré. 
+Si le message «~Calcul du fichier de calibration OK~» apparait, c'est que tout
+s'est bien passé. Votre vario est calibré.
 
 {% include manuelimg.md name="calibrationweb2.jpg" %}
 
-
 **Si la procédure semi-automatique ci-dessus ne fonctionne pas, vous pouvez calculer les valeurs de calibration avec un script python.**
 
-
-**1.** Sous Windows, installez le programme [Python](https://www.python.org/downloads/) . Assurez-vous de cocher l'option **add Python x.x to PATH**.
+**1.** Sous Windows, installez le programme [Python](https://www.python.org/downloads/). Assurez-vous de cocher l'option **add Python x.x to PATH**.
 
 {% include manuelimg.md name="python6.jpg" %}
 
