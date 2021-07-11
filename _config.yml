@@ -32,6 +32,7 @@ github_username:  prunkdump
 #github_username:  ratamuse
 
 collections:
+  - news
   - materiel
   - slicer
   - tutorials
@@ -43,6 +44,8 @@ collections:
   - download
   - language
 collections:
+  news:
+    output: true
   materiel:
     output: true
   logiciel:
@@ -64,6 +67,12 @@ collections:
   language: 
     output: true
 defaults:
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: news
+      title: News  
   - scope:
       path: ""
       type: "materiel"

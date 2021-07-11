@@ -48,7 +48,7 @@ Présente le contenu de la carte SD. Permet de créer / supprimer des dossiers, 
 Les dossiers sont proposés en premier. Si on clique sur le titre d'un dossier, on ouvre celui-ci, et les fichiers inclus sont affichés ; on le voit dans la copie d'écran précédente, pour le dossier 'vols'.  
 On peut déposer de nouveaux fichiers dans un dossier en cliquant sur l'icone bleue 'Télécharger' ; on peut aussi supprimer un dossier et tous les fichiers inclus en cliquant sur l'icone rouge 'Supprimer'.
 #### Fichiers
-On peut télécharger sur l'ordinateur le fichier en cliquant sur l'icone verte 'Télécharger' ; on peut également supprimer le fichier en cliquant sur l'icone rouge 'Supprimer'.
+On peut télécharger sur l'ordinateur le fichier en cliquant sur l'icone verte 'Télécharger'. on peut également supprimer le fichier en cliquant sur l'icone rouge 'Supprimer'.
 
 ### Onglet "Wifi"
 

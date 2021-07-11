@@ -42,8 +42,9 @@ Contribution :
 * pixyz Développeur / Développeur web       
 * prunkdump Développeur / Code source initial        
 * ratamuse  PCB / Boitier 3D / Développeur / contribution site internet     
-* vmath54  Contribution site internet      
+* vmath54  Contribution site internet
+* Ttamttam Contribution site internet      
 
 Version :
 ---------
-* Site internet 1.06u
+* Site internet 1.06v
