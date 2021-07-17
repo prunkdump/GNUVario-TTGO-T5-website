@@ -1,5 +1,5 @@
 ---
-step: 7
+step: 8
 description:  Carnet de vols / Paragliding logbook
 ---
 

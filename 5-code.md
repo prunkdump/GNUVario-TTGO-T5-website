@@ -3,7 +3,7 @@ layout: code
 title: Code
 description: Introduction
 linkdesc: Les codes source du GNUVario
-linkmsg: Trouver !
+linkmsg: C'est ici!
 linktarget:  "https://github.com/prunkdump/GNUVario-TTGO-T5"
 ---
 

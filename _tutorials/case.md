@@ -40,20 +40,26 @@ Placez le haut parleur dans la fixation disponible sur le couvercle du boitier *
 {% include tutoimg.md name="IMG_8834.JPG" %}
 {% include tutoimg.md name="IMG_8835.JPG" %}
 
+Le baromètre MS5611 soudé sur la CJMCU-117 est très sensible à la lumière. Placez un petit morceau de mousse ou de neoprène sur la plaquette pour la protéger des rayons du soleil qui pourraient passer à travers les boutons du boitier. 
+
+**Attention** de bien calculer l'épaisseur pour ne pas endommager les composants à la fermeture du boitier. 
+{% include tutoimg.md name="Mousse MS5611.jpg" %}
+
+
 Vérifiez que le boîtier ferme correctement. **Ne pas appliquer trop de pression!** Vous pouvez placer les vis.
 {% include tutoimg.md name="IMG_8836.JPG" %}
 {% include tutoimg.md name="IMG_8837.JPG" %}
 {% include tutoimg.md name="IMG_8838.JPG" %}
 
-Vous pouvez replacer l'écran si besoin. **Décoller doucement le double face et replacez l'écran avec prudence et en n'appliquant pas trop de pression!** 
-{% include tutoimg.md name="IMG_8842.JPG" %}
+Vous pouvez replacer l'écran si besoin. **Décoller doucement le double face et replacez l'écran avec prudence et en n'appliquant pas trop de pression!** Le plus simple est d'utiliser une lame d'un cutter sur laquelle vous aurez mis quelques gouttes d'alcool pour dissoudre la colle.
+{% include tutoimg.md name="cutter.jpeg" %}
 {% include tutoimg.md name="IMG_8843.JPG" %}
 
 Terminez en plaçant le HP au font du support et en refermant le boitier
 {% include tutoimg.md name="IMG_8839.JPG" %}
 {% include tutoimg.md name="IMG_8844.JPG" %}
 
-Votre GnuVario est terminé
+Votre GnuVario-E est terminé
 1. Chargez la batterie jusqu'à ce qu'elle soit pleine.
 2. Copiez les fichiers du dossier RootSD à la racine de la carte SD et insérez la dans le connecteur à gauche.
 3. Mettez le variomètre à jour via le port USB.

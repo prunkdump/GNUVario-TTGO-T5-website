@@ -1,10 +1,7 @@
 ---
-step: 6
+step: 7
 description: La calibration
 ---
-
-
-
 
 Le GnuVario-E intègre un accéléromètre, qui doit être calibré.
 
