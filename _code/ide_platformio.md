@@ -13,7 +13,7 @@ La documentation complète de l'installation PlatformIO avec VSCode est [décrit
 ### installation de VSCode
 
 L'exécutable d'installation est disponible à [https://code.visualstudio.com/](https://code.visualstudio.com/).  
-Dans l'environnement Windows, on va télécharger un fichier du genre `VSCodeUserSetup-x64-1.42.1.exe`.  
+Dans l'environnement Windows, on va télécharger un fichier du genre *VSCodeUserSetup-x64-1.42.1.exe*.  
 Double-cliquer sur ce fichier, et l'assistant d'installation va s'exécuter ; laisser les options par défaut.
 
 ### installation de PlatformIO

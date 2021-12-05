@@ -1,5 +1,5 @@
 ---
-step: 6
+step: 5
 description: Le serveur Web
 ---
 
@@ -65,7 +65,7 @@ Le résultat est écrit sur la carte SD, dans le fichier '/wifi.cfg'
 Les options proposées dans cet onglet permettent de personnaliser le fonctionnement du vario. Elles sont liées au fichier '/params.jso' sur la carte SD.  
 Les paramètres sont décrits dans la partie ['Configuration']({{ site.baseurl }}/6-configuration.html) de la documentation du GNUVario.
 
-Ces paramètres sont répartis dans 5 onglets :  
+Ces paramètres sont répartis dans 4 onglets :  
 '_Général_' - '_Vario_' - '_Début du vol_' - '_Système_'- '_Calibration_'   
 {% include manuelimg.md name="configuration_01.jpg" %}  
 - Général  
@@ -78,7 +78,7 @@ Permet de définit les critères qui vont permettre au vario de déterminer qu'u
 - Système  
 Permet de régler différents paramètres relatifs au fonctionnement du vario : bips au démarage du vario, du vol, du fixe GPS, activation de l'enregistrement des vols...
 - Calibration     
-Permet de générer le fichier variocal.cfg après avoir calibré son vario [(voir page dédiée)]({{ site.baseurl }}/manuel/Calibration.html)
+Permet de générer le fichier variocal.cfg après avoir calibré son vario (voir page dédiée)
 
 ### *Onglet "Mise à jour"*{: style="color:   #138ca2; opacity: 1;" }
 Permet de mettre à jour le logiciel (firmware) du vario.  
