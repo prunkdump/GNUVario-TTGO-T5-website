@@ -7,7 +7,7 @@ Pour compiler le code source GNUVario-E, vous avez besoin de l’IDE ​​Ardui
 
 Ensuite, vous allez ajouter la gestion des cartes ESP32 dans l'IDE Arduino
 
-Allez dans l'onglet **"Fichier"** puis **"Préférences"** de l'IDE et ajouter l'URL **https://dl.espressif.com/dl/package_esp32_index.json** aux URL de gestionnaire de cartes supplémentaires.
+Allez dans l'onglet **"Fichier"** puis **"Préférences"** de l'IDE et ajouter l'URL **https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json** aux URL de gestionnaire de cartes supplémentaires.
 
 ![GitHub téléchargement zip]({{ "/assets/code_img/code11.jpg" | absolute_url }})
 
